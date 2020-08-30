@@ -8,6 +8,7 @@ mongoose.connect('mongodb+srv://user:Sarveshp273@@cluster0.urxxg.gcp.mongodb.net
 })
 
 app.set('view engine', 'ejs')
+app.use(express.static(__dirname + '/views'));
 app.use(express.urlencoded({ extended: false }))
 
 app.get('/', async (req, res) => {
