@@ -22,3 +22,12 @@ body{
     display: block;
     margin-top: 0;
  }
+
+ .navbar-link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(270deg,#ff8a00,#e52e71);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
