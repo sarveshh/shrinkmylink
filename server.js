@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://user:Sarveshp273@@cluster0.urxxg.gcp.mongodb.net/dbshrinkmylink?retryWrites=true&w=majority", {
-  useNewUrlParser: true, useUnifiedTopology: true
+  useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true
 })
 
 app.set('view engine', 'ejs')

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const shortId = require('shortid')
 
+
 const shortUrlSchema = new mongoose.Schema({
   full: {
     type: String,
@@ -9,13 +10,14 @@ const shortUrlSchema = new mongoose.Schema({
   short: {
     type: String,
     required: true,
-    default: shortId.generate
+    create: true,
+    default: "https://shrinkmylinks.herokuapp.com/"+shortId.generate
   },
   clicks: {
     type: Number,
     required: true,
     default: 0
-  }
-})
+  },
+},{timestamps: true});
 
 module.exports = mongoose.model('ShortUrl', shortUrlSchema)
