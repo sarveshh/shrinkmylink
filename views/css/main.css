@@ -60,3 +60,11 @@ td:hover{
     -webkit-background-clip: text;
 
 }
+
+.valid{
+    color:green;
+}
+
+.invalid{
+    color:red;
+}

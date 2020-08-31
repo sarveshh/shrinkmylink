@@ -1652,9 +1652,10 @@
       <h1 class="input-text">Some demo text</h1>
       <form action="/shortUrls" method="POST" class="my-4 form-inline">
         <label for="fullUrl" class="sr-only">Url</label>
-        <input required placeholder="Please enter full url" type="url" name="fullUrl" id="fullUrl" class="form-control col mr-2">
+        <input required oninput="urlmatch()" placeholder="Please enter full url" type="url" name="fullUrl" id="fullUrl" class="form-control col mr-2">
         <button class="btn btn-success" type="submit">Shorten your URL</button>
       </form>
+      <p id="validation" style="font-size: 15px;font-weight:bold;"></p> 
     <div class="table-style w3-responsive">
       <table class="w3-table-all w3-card-4 table table-condensed table-hover table-responsive">
         <thead>
@@ -1668,7 +1669,7 @@
           <% shortUrls.forEach(shortUrl => { %>
             <tr>
               <td style="position: inherit;word-break: break-word;"><a href="<%= shortUrl.full %>"><%= shortUrl.full %></a></td>
-              <td><a href="<%= shortUrl.short %>"><%= shortUrl.short %></a></td>
+              <td><a href="<%= shortUrl.short %>">shrinkmylinks.herokuapp.com/<%= shortUrl.short %></a></td>
               <td class="w3-center"><%= shortUrl.clicks %></td>
             </tr>
           <% }) %>
@@ -1680,5 +1681,6 @@
   <script src="./js/jquery-3.5.1.slim.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/popper.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
