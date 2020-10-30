@@ -1,30 +1,30 @@
-
-body{
-    background-color: transparent !important;
+body {
+  background-color: transparent !important;
 }
 
-html { 
-    background: url(../assets/bg.svg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-.input-text{
-    font-size:2.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    /* background: linear-gradient(-270deg,#c31432,#240b36); */
-    /* background: linear-gradient(to left, #dd1818, #333333); */
-    /* background: linear-gradient(to right, #000000, #EB5757); */
-    background: linear-gradient(to left, #6f0000, #200122); 
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    padding: 30px;
+html {
+  background: url(../assets/bg.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.content-start{
+.input-text {
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  /* background: linear-gradient(-270deg,#c31432,#240b36); */
+  /* background: linear-gradient(to left, #dd1818, #333333); */
+  /* background: linear-gradient(to right, #000000, #EB5757); */
+  background: linear-gradient(to left, #6f0000, #200122);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding: 30px;
+}
+
+.content-start {
   /* position: absolute;
   top: 40%; */
   width: 50%;
@@ -36,43 +36,42 @@ html {
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
- }
-
- .navbar-link{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(270deg,#ff8a00,#e52e71);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-nav{
-    width: auto;
+  display: block;
+  margin-top: 0;
 }
 
-td{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(270deg,#ff8a00,#e52e71);
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+.navbar-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff8a00, #e52e71);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+nav {
+  width: auto;
 }
 
-td:hover{
-    background: black;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-
+td {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff8a00, #e52e71);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-.valid{
-    color:green;
+td:hover {
+  background: black;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-.invalid{
-    color:red;
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
 }
